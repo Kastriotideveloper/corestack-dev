@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="CoreStack Dev builds modern web, mobile, API, and cloud software for businesses that need reliable digital products."
+      content="CoreStack Dev is a software development studio for Angular, .NET, mobile, cloud, and business automation products."
     />
-    <title>CoreStack Dev | Web, Mobile & Cloud Software</title>
+    <title>CoreStack Dev | Custom Software Studio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -20,10 +20,14 @@
     <header class="site-header">
       <a class="brand" href="#top" aria-label="CoreStack Dev home">
         <span class="brand-mark">CS</span>
-        <span class="brand-text">CoreStack Dev</span>
+        <span>
+          <strong>CoreStack Dev</strong>
+          <small>Software Studio</small>
+        </span>
       </a>
 
       <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
         <a href="#services">Services</a>
         <a href="#process">Process</a>
         <a href="#stack">Stack</a>
@@ -34,196 +38,317 @@
     <main id="top">
       <section class="hero">
         <div class="hero-media" aria-hidden="true"></div>
-        <div class="hero-overlay"></div>
+        <div class="hero-shade" aria-hidden="true"></div>
 
-        <div class="hero-content">
-          <p class="eyebrow">Software development studio</p>
-          <h1>CoreStack Dev</h1>
-          <p class="hero-copy">
-            We design and build clean, scalable software: Angular frontends,
-            .NET APIs, mobile apps, cloud deployments, and internal business
-            tools that feel fast, stable, and easy to use.
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow">Custom software for practical teams</p>
+            <h1>Build the product your business actually needs.</h1>
+            <p class="lead">
+              CoreStack Dev designs and ships focused software: Angular
+              applications, .NET APIs, mobile PWAs, internal tools, integrations,
+              and cloud-ready systems for teams that need clarity, speed, and
+              maintainable code.
+            </p>
+
+            <div class="hero-actions">
+              <a class="button button-primary" href="#contact">Discuss a project</a>
+              <a class="button button-ghost" href="#work">See how we work</a>
+            </div>
+          </div>
+
+          <aside class="hero-panel" aria-label="Delivery snapshot">
+            <div class="panel-topline">Delivery snapshot</div>
+            <div class="metric-row">
+              <span>Frontend</span>
+              <strong>Angular, Ionic, PWA</strong>
+            </div>
+            <div class="metric-row">
+              <span>Backend</span>
+              <strong>.NET APIs, EF Core, SQL</strong>
+            </div>
+            <div class="metric-row">
+              <span>Launch</span>
+              <strong>GitHub Pages, Azure, VPS</strong>
+            </div>
+            <div class="panel-note">
+              MVP-first delivery, clean architecture, validation, testing, and
+              production handoff.
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="trust-strip" aria-label="CoreStack Dev focus areas">
+        <span>Web apps</span>
+        <span>Mobile PWAs</span>
+        <span>REST APIs</span>
+        <span>Business tools</span>
+        <span>Cloud hosting</span>
+        <span>Product MVPs</span>
+      </section>
+
+      <section id="work" class="section split-section">
+        <div class="section-kicker">
+          <p class="eyebrow">Outcomes</p>
+          <h2>Software that removes friction from everyday work.</h2>
+        </div>
+        <div class="body-copy">
+          <p>
+            A good product is not just a nice interface. It is a system where
+            users know what to do, data is reliable, errors are handled, and the
+            team can keep improving without fear of breaking everything.
           </p>
-
-          <div class="hero-actions">
-            <a class="button button-primary" href="#contact">Start a project</a>
-            <a class="button button-secondary" href="#services">View services</a>
-          </div>
-
-          <div class="hero-stats" aria-label="CoreStack Dev strengths">
-            <div>
-              <strong>10+</strong>
-              <span>years engineering experience</span>
-            </div>
-            <div>
-              <strong>.NET</strong>
-              <span>APIs, architecture, integrations</span>
-            </div>
-            <div>
-              <strong>Angular</strong>
-              <span>web apps, dashboards, portals</span>
-            </div>
-          </div>
+          <p>
+            CoreStack Dev focuses on small, valuable releases. We define the
+            first useful version, build the workflow end-to-end, then improve it
+            with real feedback.
+          </p>
         </div>
       </section>
 
-      <section class="section intro">
-        <div class="section-heading">
-          <p class="eyebrow">What we do</p>
-          <h2>Practical software for real business workflows.</h2>
+      <section class="section case-section">
+        <div class="case-heading">
+          <p class="eyebrow">Engagement examples</p>
+          <h2>Ways we can help.</h2>
         </div>
-        <p class="intro-copy">
-          CoreStack Dev helps founders, small businesses, and teams turn ideas
-          into reliable products. The focus is not only writing code, but
-          building the right structure: clear APIs, usable interfaces,
-          maintainable architecture, and deployment paths that can grow.
-        </p>
+
+        <div class="case-grid">
+          <article class="case-card">
+            <span class="case-type">MVP</span>
+            <h3>Private learning app</h3>
+            <p>
+              A mobile-first PWA for lessons, vocabulary, flashcards, progress,
+              and admin-managed content.
+            </p>
+            <ul>
+              <li>Angular + Ionic UI</li>
+              <li>.NET API when sync is needed</li>
+              <li>Offline-friendly first version</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <span class="case-type">Business ops</span>
+            <h3>Internal admin platform</h3>
+            <p>
+              Role-based dashboards, CRUD workflows, validation, exports,
+              reporting, and audit-friendly business screens.
+            </p>
+            <ul>
+              <li>Clean service layer</li>
+              <li>DTOs, validators, mappers</li>
+              <li>API and UI testing path</li>
+            </ul>
+          </article>
+
+          <article class="case-card">
+            <span class="case-type">Launch</span>
+            <h3>Brand landing page</h3>
+            <p>
+              A polished public website with strong positioning, fast static
+              hosting, SEO basics, and clear contact paths.
+            </p>
+            <ul>
+              <li>GitHub Pages ready</li>
+              <li>Responsive design</li>
+              <li>Zero monthly hosting cost</li>
+            </ul>
+          </article>
+        </div>
       </section>
 
-      <section id="services" class="section services">
-        <div class="section-heading">
+      <section id="services" class="section services-section">
+        <div class="section-kicker">
           <p class="eyebrow">Services</p>
-          <h2>From prototype to production.</h2>
+          <h2>Senior engineering across the stack.</h2>
         </div>
 
-        <div class="service-grid">
-          <article class="service-card">
-            <span class="service-icon">01</span>
-            <h3>Web Applications</h3>
-            <p>
-              Angular apps, admin panels, dashboards, customer portals, booking
-              flows, and responsive business tools built for daily use.
-            </p>
+        <div class="service-list">
+          <article class="service-row">
+            <span>01</span>
+            <div>
+              <h3>Product strategy and MVP planning</h3>
+              <p>
+                Clarify the product, users, core workflow, feature priority,
+                technical risk, and launch plan before writing unnecessary code.
+              </p>
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon">02</span>
-            <h3>.NET APIs</h3>
-            <p>
-              Secure REST APIs, clean service layers, authentication,
-              validation, database design, background jobs, and integrations.
-            </p>
+          <article class="service-row">
+            <span>02</span>
+            <div>
+              <h3>Angular web applications</h3>
+              <p>
+                Responsive portals, admin panels, dashboards, forms, tables,
+                design systems, route structure, API integration, and state
+                management.
+              </p>
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon">03</span>
-            <h3>Mobile & PWA</h3>
-            <p>
-              Ionic Angular apps, installable PWAs, Android builds, private
-              testing flows, and mobile-first experiences without store friction.
-            </p>
+          <article class="service-row">
+            <span>03</span>
+            <div>
+              <h3>.NET API development</h3>
+              <p>
+                Minimal APIs, authentication, authorization, FluentValidation,
+                EF Core, SQL, clean services, error handling, and integration
+                endpoints.
+              </p>
+            </div>
           </article>
 
-          <article class="service-card">
-            <span class="service-icon">04</span>
-            <h3>Cloud & Hosting</h3>
-            <p>
-              Azure-ready deployments, GitHub Pages, static hosting, API
-              hosting, database setup, monitoring, and release preparation.
-            </p>
+          <article class="service-row">
+            <span>04</span>
+            <div>
+              <h3>Mobile PWA and Android packaging</h3>
+              <p>
+                Ionic Angular interfaces that feel like apps, private testing
+                flows, installable web apps, and Android-ready builds when the
+                product is mature.
+              </p>
+            </div>
+          </article>
+
+          <article class="service-row">
+            <span>05</span>
+            <div>
+              <h3>Cloud setup and release support</h3>
+              <p>
+                Static hosting, API deployment, domain setup, HTTPS, environment
+                configuration, database connection, and practical production
+                checklists.
+              </p>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="process" class="section process">
-        <div class="section-heading">
+      <section id="process" class="section process-section">
+        <div class="section-kicker">
           <p class="eyebrow">Process</p>
-          <h2>A calm path from idea to launch.</h2>
+          <h2>A delivery model that keeps the project understandable.</h2>
         </div>
 
-        <div class="timeline">
-          <div class="timeline-item">
-            <span>Discover</span>
+        <div class="process-grid">
+          <div class="process-step">
+            <strong>01</strong>
+            <h3>Map the workflow</h3>
             <p>
-              We clarify the goal, users, screens, data, risks, and the first
-              useful version instead of overbuilding from day one.
+              We identify who uses the product, what they need to accomplish,
+              and which screens and API contracts are required.
             </p>
           </div>
-          <div class="timeline-item">
-            <span>Design</span>
+          <div class="process-step">
+            <strong>02</strong>
+            <h3>Design the first release</h3>
             <p>
-              We shape the UI, user flows, API contracts, database structure,
-              and permissions before the implementation gets heavy.
+              We define a realistic MVP, avoid unnecessary features, and keep
+              the scope focused enough to ship.
             </p>
           </div>
-          <div class="timeline-item">
-            <span>Build</span>
+          <div class="process-step">
+            <strong>03</strong>
+            <h3>Build in clean slices</h3>
             <p>
-              We implement features in clean slices: frontend, backend,
-              validation, tests, error handling, and deployment configuration.
+              Each feature gets UI, API, validation, data model, errors, and
+              verification instead of half-finished layers.
             </p>
           </div>
-          <div class="timeline-item">
-            <span>Launch</span>
+          <div class="process-step">
+            <strong>04</strong>
+            <h3>Launch and improve</h3>
             <p>
-              We prepare hosting, domain, release checks, privacy pages,
-              analytics, and the next iteration after user feedback.
+              We publish, test with users, observe feedback, and plan the next
+              version with better information.
             </p>
           </div>
-        </div>
-      </section>
-
-      <section id="stack" class="section stack-section">
-        <div class="section-heading">
-          <p class="eyebrow">Technology</p>
-          <h2>A modern stack with familiar foundations.</h2>
-        </div>
-
-        <div class="stack-grid">
-          <div class="stack-pill">Angular</div>
-          <div class="stack-pill">Ionic</div>
-          <div class="stack-pill">TypeScript</div>
-          <div class="stack-pill">.NET</div>
-          <div class="stack-pill">C#</div>
-          <div class="stack-pill">EF Core</div>
-          <div class="stack-pill">SQL Server</div>
-          <div class="stack-pill">PostgreSQL</div>
-          <div class="stack-pill">Azure</div>
-          <div class="stack-pill">GitHub Pages</div>
-          <div class="stack-pill">REST APIs</div>
-          <div class="stack-pill">PWA</div>
         </div>
       </section>
 
-      <section class="section proof">
-        <div class="proof-panel">
+      <section id="stack" class="section capability-section">
+        <div class="section-kicker">
+          <p class="eyebrow">Capabilities</p>
+          <h2>The stack is modern, but the goal is business reliability.</h2>
+        </div>
+
+        <div class="capability-grid">
           <div>
-            <p class="eyebrow">Built for clarity</p>
-            <h2>Good software should feel easy to understand.</h2>
+            <h3>Frontend</h3>
+            <p>Angular, TypeScript, Ionic, responsive UI, PWAs, forms, tables.</p>
           </div>
-          <p>
-            The best products do not depend on chaos. They use clear domain
-            models, small services, readable UI, predictable deployment, and
-            enough testing to protect the work that matters.
-          </p>
+          <div>
+            <h3>Backend</h3>
+            <p>.NET, C#, Minimal APIs, FluentValidation, clean service layers.</p>
+          </div>
+          <div>
+            <h3>Data</h3>
+            <p>SQL Server, PostgreSQL, EF Core, migrations, reporting flows.</p>
+          </div>
+          <div>
+            <h3>Quality</h3>
+            <p>Unit tests, integration tests, validation, logs, error handling.</p>
+          </div>
+          <div>
+            <h3>Cloud</h3>
+            <p>Azure, GitHub Pages, domains, HTTPS, environment configuration.</p>
+          </div>
+          <div>
+            <h3>Product</h3>
+            <p>Discovery, UX structure, MVP planning, release strategy.</p>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
-        <div class="contact-content">
-          <p class="eyebrow">Contact</p>
-          <h2>Have an idea, feature, or product to build?</h2>
+      <section class="section quote-section">
+        <div class="quote-panel">
+          <p class="eyebrow">Principle</p>
+          <blockquote>
+            Build small enough to ship, clean enough to maintain, and useful
+            enough that users come back.
+          </blockquote>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Start</p>
+          <h2>Tell us what you want to build.</h2>
           <p>
-            Tell us what you want to create. We can start with a small landing
-            page, an MVP, a private web app, a mobile PWA, or a complete
-            frontend and backend system.
+            Send the idea, the problem, or the current codebase. We can start
+            with a landing page, MVP, private web app, Angular frontend, .NET
+            API, or full product plan.
           </p>
         </div>
 
-        <div class="contact-actions">
-          <a class="button button-primary" href="mailto:hello@corestack.dev">
-            hello@corestack.dev
+        <div class="contact-card">
+          <a class="contact-line" href="mailto:hello@corestack.dev">
+            <span>Email</span>
+            <strong>hello@corestack.dev</strong>
           </a>
-          <a class="button button-secondary" href="tel:+38300000000">
-            +383 00 000 000
+          <a class="contact-line" href="tel:+38300000000">
+            <span>Phone</span>
+            <strong>+383 00 000 000</strong>
+          </a>
+          <a class="button button-primary contact-button" href="mailto:hello@corestack.dev">
+            Request a project call
           </a>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <span>© 2026 CoreStack Dev. All rights reserved.</span>
-      <span>Web, mobile, APIs, cloud.</span>
+      <div>
+        <strong>CoreStack Dev</strong>
+        <span>Custom software studio for web, mobile, APIs, and cloud.</span>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
     </footer>
   </body>
 </html>
