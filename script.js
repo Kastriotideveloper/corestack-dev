@@ -215,3 +215,22 @@
     draw();
   }
 })();
+
+
+// Google Analytics click tracking for important CoreStack Dev actions.
+document.querySelectorAll("a[href^='mailto'], .button, .nav-cta").forEach((element) => {
+  element.addEventListener("click", () => {
+    if (typeof gtag === "function") {
+      const label =
+        element.getAttribute("data-track") ||
+        element.textContent.trim() ||
+        element.getAttribute("href") ||
+        "website_click";
+
+      gtag("event", "click", {
+        event_category: "website_interaction",
+        event_label: label
+      });
+    }
+  });
+});
